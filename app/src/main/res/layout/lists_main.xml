@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+
+    android:background="@drawable/aaa">
+
+
+<HorizontalScrollView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:padding="2dp"
+    >
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:fontFamily="@font/asma"
+        app:singleSelection="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_1"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:checked="true"
+            android:textColor="#025E75"
+            app:rippleColor="@color/black"
+            app:chipStrokeColor="#025E75"
+            app:chipStrokeWidth="1dp"
+            android:fontFamily="@font/asma"
+            android:text=" دفع كاملا " />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:textColor="#025E75"
+            app:chipStrokeColor="#025E75"
+            app:chipStrokeWidth="1dp"
+            android:fontFamily="@font/asma"
+            android:text=" دفع جزئ " />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_3"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:textColor="#025E75"
+            app:rippleColor="@color/black"
+            app:chipStrokeColor="#025E75"
+            app:chipStrokeWidth="1dp"
+            android:fontFamily="@font/asma"
+            android:text=" لم يدفع " />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_4"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:textColor="#025E75"
+            app:rippleColor="@color/black"
+            app:chipStrokeColor="#025E75"
+            app:chipStrokeWidth="1dp"
+            android:fontFamily="@font/asma"
+            android:text=" كريدي مسبق " />
+
+    </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#025E75"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lv"
+    android:divider="#00FFFFFF"
+    android:layout_marginTop="10dp"
+    android:dividerHeight="8dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    />
+</LinearLayout>

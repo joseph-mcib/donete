@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:layoutDirection="ltr"
+
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F19797"
+        app:strokeWidth="0dp"
+        android:id="@+id/card_history"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/deleticon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حذف السجل"
+                android:gravity="center"
+                android:fontFamily="@font/asma"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:textSize="16dp"
+                android:textColor="#BAD50000"
+
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_history"
+        android:divider="#00FFFFFF"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+</LinearLayout>
