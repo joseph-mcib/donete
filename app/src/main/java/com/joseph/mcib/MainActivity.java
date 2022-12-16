@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         pref_1 = getApplicationContext().getSharedPreferences("MyPref_1", MODE_PRIVATE);
         pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
 
-        for (int i=0;i<41;i++){
+        for (int i=0;i<24;i++){
            prix_person= Double.parseDouble(pref.getString("prix_person", "0"));
 
             double prix_ver= Double.parseDouble(pref.getString(String.format("prix_ver_%d", i), "0"));
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
              prix_tot_ver=prix_tot_ver+prix_ver;
 
         }
-        prix_tot_rest=(prix_person*41)-prix_tot_ver;
+        prix_tot_rest=(prix_person*24)-prix_tot_ver;
 
         ed_ver_tot.setText(Integer.toString((int) prix_tot_ver));
         ed_rest_tot.setText(Integer.toString((int) prix_tot_rest));
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         prix_tot_ver=0;
-        for (int i=0;i<41;i++){
+        for (int i=0;i<24;i++){
             prix_person= Double.parseDouble(pref.getString("prix_person", "0"));
 
             double prix_ver= Double.parseDouble(pref.getString(String.format("prix_ver_%d", i), "0"));
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             prix_tot_ver=prix_tot_ver+prix_ver;
 
         }
-        prix_tot_rest=(prix_person*41)-prix_tot_ver;
+        prix_tot_rest=(prix_person*24)-prix_tot_ver;
 
         ed_ver_tot.setText(Integer.toString((int) prix_tot_ver));
         ed_rest_tot.setText(Integer.toString((int) prix_tot_rest));

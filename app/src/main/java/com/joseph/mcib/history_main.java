@@ -1,7 +1,6 @@
 package com.joseph.mcib;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -26,7 +25,7 @@ public class history_main extends AppCompatActivity {
 
         card_history=findViewById(R.id.card_history);
         lv_history=findViewById(R.id.lv_history);
-        for (int i=0;i<41;i++){
+        for (int i=0;i<24;i++){
             String person=pref_1.getString(String.format("person_%d",i),"0");
         if (!person.equals("0")){
 

@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/asma"
                     android:gravity="center|left|top"
-                    android:text="حي حريرش محمد"
+                    android:text="حي الشهيد هادف محمد"
                     android:textColor="#878585"
                     android:textSize="18dp"
                      />
